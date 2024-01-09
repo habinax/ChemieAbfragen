@@ -1,5 +1,10 @@
-import gui
+from gui import MyGUI
 import tkinter as tk
+import tkinter as tk
+from tkinter import filedialog
+from PIL import Image, ImageTk
+from os import listdir
+import random
 from PyPDF2 import PdfReader
 # creating a pdf reader object
 #reader = PdfReader('C:\\Users\\inap\\Downloads\\chemiemol\\printtopdf.pdf')
@@ -27,7 +32,7 @@ from PyPDF2 import PdfReader
 # ]
 
 root = tk.Tk()
-app = gui.MyGUI(root)
+app = MyGUI(root)
 root.geometry("800x300")  # Setze die gewünschte Startgröße
 root.mainloop()
 
