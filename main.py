@@ -1,7 +1,7 @@
-from gui import MyGUI
-import tkinter as tk
 import tkinter as tk
 from tkinter import filedialog
+
+from gui import MyGUI
 from PIL import Image, ImageTk
 from os import listdir
 import random
