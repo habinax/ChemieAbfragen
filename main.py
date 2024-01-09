@@ -1,11 +1,7 @@
 import tkinter as tk
-from tkinter import filedialog
 
 from gui import MyGUI
-from PIL import Image, ImageTk
-from os import listdir
-import random
-from PyPDF2 import PdfReader
+
 # creating a pdf reader object
 #reader = PdfReader('C:\\Users\\inap\\Downloads\\chemiemol\\printtopdf.pdf')
 
