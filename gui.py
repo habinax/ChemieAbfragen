@@ -228,11 +228,11 @@ class MyGUI:
         if lowerborder<0:
             lowerborder=0
         if higherborder>len(listallestoffe):
-            higherborder=len(listallestoffe)
+            higherborder=len(listallestoffe)-1
         print("higherboarder: ", higherborder)
         print("lowerboarder: ", lowerborder)
         for i in range(0,4):
-            buttonlist.append(allestoffecopy[random.randint(lowerborder,higherborder-1)])
+            buttonlist.append(allestoffecopy[random.randint(lowerborder,higherborder)])
 
         while any(buttonlist.count(x) > 1 for x in buttonlist):
             buttonlist.clear()
@@ -298,7 +298,7 @@ class MyGUI:
         # sets the geometry of toplevel
         newWindow.geometry("320x120+150+100")
 
-        text_label = tk.Label(newWindow, text=f'Falsche Antwort!\nDie richtige Antwort wäre '+right_answer+ ' gewesen.')
+        text_label = tk.Label(newWindow, text=f'Falsche Antwort!\nRichtige Antwort wäre: '+right_answer+'.')
         text_label.pack(padx=20, pady=20)
 
         # Button im neuen Fenster hinzufügen
