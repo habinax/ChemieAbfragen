@@ -202,7 +202,7 @@ cwd = os.getcwd()
 listallestoffe = alles.split("\n")
 
 onlyfiles = [f for f in listdir(cwd+"\\venv\\Picturesprinttopdf")]
-print(len(onlyfiles))
+#print(len(onlyfiles))
 dic = []
 for i in range(len(onlyfiles)):
     # im = Image.open("C:\\Users\\inap\\PycharmProjects\\ChemieAbfragen\\venv\\Picturesprinttopdf\\mol-"+str(i)+".png")
@@ -220,8 +220,8 @@ class MyGUI:
         buttonlist.append(dic[rint][1])
         allestoffecopy.remove(dic[rint][1])
 
-        print("rint: ", rint)
-        print(len(dic))
+        #print("rint: ", rint)
+        #print(len(dic))
 
         lowerborder = rint-15
         higherborder = rint+15
@@ -229,8 +229,8 @@ class MyGUI:
             lowerborder=0
         if higherborder>len(listallestoffe):
             higherborder=len(listallestoffe)-1
-        print("higherboarder: ", higherborder)
-        print("lowerboarder: ", lowerborder)
+        #print("higherboarder: ", higherborder)
+        #print("lowerboarder: ", lowerborder)
         for i in range(0,4):
             buttonlist.append(allestoffecopy[random.randint(lowerborder,higherborder)])
 
@@ -261,7 +261,7 @@ class MyGUI:
 
         # 5 verschiedene Buttons hinzufügen
         for i in range(len(buttonlist)):
-            print(buttonlist[i])
+            #print(buttonlist[i])
             if buttonlist[i] is dic[rint][1]:
                 button = tk.Button(button_frame, text=buttonlist[i], command=lambda i=i: self.button_clicked_right(i))
                 button.grid(row=i, column=0, padx=10, pady=10)
