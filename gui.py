@@ -172,7 +172,7 @@ Alanin
 Acetylcystein
 Acetylglycin
 Hydroxyprolin
-D-Fructose (R: ß-D-Fructofuranose) Rechts?
+D-Fructose (R: ß-D-Fructofuranose)
 D-Glucose (R: ß-D-Glucopyranose)
 Maltose
 D-Ribulose
@@ -191,9 +191,9 @@ Furan
 Imidazol
 Indol
 Naphthalin
-D-Galactose (R: a-D-Galactopyranose) Rechts?
-D-Mannose (R: a-D-Mannopyranose) Rechts?
-D-Ribose (R: ß-D-Ribofuranose) Rechts?
+D-Galactose (R: a-D-Galactopyranose) 
+D-Mannose (R: a-D-Mannopyranose) 
+D-Ribose (R: ß-D-Ribofuranose) 
 D-Xylose (R: ß-D-Xylofuranose)"""
 
 
